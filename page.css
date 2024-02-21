@@ -1,0 +1,443 @@
+/*header*/
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+.heroImage {
+    position: absolute;
+    background: linear-gradient(rgba(0, 0, 0, 0.499), rgba(0, 0, 0, 0.504)), url(fond.jpg);
+    width: 100%;
+    height: 90%;
+    background-repeat: no-repeat;
+}
+
+.titleAssoce {
+    position: relative;
+    z-index: 1000;
+    text-align: center;
+    color: aliceblue;
+    font-weight: bolder;
+
+
+}
+
+h1.assoceName {
+    padding-top: 30dvh;
+    font-size: 10dvw;
+
+}
+
+p.slogan {
+    padding-top: 5dvh;
+    font-size: 20px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.tirebas {
+    position: relative;
+    animation-name: tsipika;
+    animation-duration: 3s;
+
+
+}
+
+
+
+
+/*nav*/
+nav {
+    position: fixed;
+    background: linear-gradient(rgba(12, 64, 69, 0.481), rgba(245, 116, 116, 0.403), rgba(8, 34, 85, 0.464));
+    display: flex;
+    justify-content: space-around;
+    top: 0%;
+   
+    padding: 5dvh 5dvh;
+
+    flex-direction: row;
+    z-index: 10;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 2dvw 10dvh;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 0%;
+
+}
+
+
+a {
+    color: rgb(236, 236, 241);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+
+
+
+/*aside*/
+aside {
+    position: relative;
+    margin-top: 25dvh;
+}
+
+#tavany1 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
+}
+
+/*#div1 */
+#hello1 {
+    top: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    background-color: aqua;
+    width: 100%;
+    height: 80dvh;
+    /*z-index: 3;*/
+    margin-bottom: 20dvh;
+}
+
+
+
+/*#div2*/
+#hello2 {
+    top: 80dvh;
+    position: absolute;
+    display: flex;
+    background-color: rgb(6, 115, 115);
+    width: 100%;
+    height: 80dvh;
+    /*z-index: 2;*/
+
+}
+
+/*#div3*/
+#hello3 {
+    top: 150dvh;
+    position: absolute;
+    background-color: rgb(3, 34, 34);
+    width: 100%;
+    height: 80dvh;
+    /*z-index: 1;*/
+
+}
+
+
+
+
+
+
+
+/* footer part*/
+footer {
+    position: relative;
+    top: 230dvh;
+}
+
+.formulaire {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding-bottom: 10dvh;
+    background: linear-gradient(rgba(8, 46, 92, 0.578), rgba(17, 5, 52, 0.763), rgba(3, 1, 11, 0.763)), url(astro.jpg);
+
+
+}
+
+form {
+    background-color: rgba(9, 1, 23, 0.36);
+    margin-top: 5dvh;
+    padding: 3dvh;
+    border: solid rgba(165, 251, 207, 0.607);
+    border-radius: 12%;
+}
+
+.header {
+    color: white;
+
+
+}
+
+.name input,
+.firstName input,
+.mail input {
+    background-color: transparent;
+    margin-bottom: 1dvh;
+    width: 93%;
+    height: 100%;
+    outline: none;
+    border: 2px solid white;
+    border-radius: 40px;
+    padding: 5px 7px;
+    color: aliceblue;
+
+
+}
+
+.boutons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    width: 100%;
+
+
+}
+
+.boutons button {
+    color: rgb(213, 248, 244);
+    border-color: rgba(95, 158, 160, 0.771);
+    background-color: rgba(91, 87, 90, 0.627);
+    border-radius: 10cap;
+
+}
+
+button:hover {
+    transition: transform 2s ease-in-out 2s;
+    transform: scale(1.9);
+}
+
+
+aside {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/*media queries*/
+
+@media (min-width: 600px) {
+    nav {
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        padding-right: 5%;
+        padding-left: 5%;
+        flex-direction: row;
+       /* background: linear-gradient(rgba(96, 37, 37, 0.481), rgba(238, 63, 63, 0.403), rgba(81, 10, 14, 0.681));*/
+        height: 5dvh;
+        
+        
+
+    }
+
+    a {
+        color: rgb(248, 201, 181);
+        text-decoration: none;
+        font-weight: bold;
+        font-size: larger;
+        /*padding-top: 3%;*/
+
+    }
+
+    #tavany1 {
+        position: absolute;
+        height: 500px;
+        width: 100%;
+        justify-content: center;
+        align-items: center
+        
+    }
+
+    #hello1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+
+
+    }
+
+    #history {
+        border-style: solid;
+        text-align: center;
+        height: fit-content;
+        width: fit-content;
+        margin: 0 5%;
+        font-size: x-large;
+        padding: 2%;
+
+
+
+    }
+
+    #goal {
+        margin-top: 5dvh;
+        border-style: solid;
+        width: fit-content;
+        text-align: center;
+        height: fit-content;
+        font-size: x-large;
+        overflow: hidden;
+        /*overflow-y: scroll;*/
+        margin: 0 5%;
+    }
+
+
+    #hello2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+    }
+
+    #hello3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+
+}
+
+
+
+
+@media (max-width: 500px) {
+    nav {
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        padding-right: 5%;
+        padding-left: 5%;
+        flex-direction: row;
+        background: linear-gradient(rgba(96, 37, 37, 0.481), rgba(238, 63, 63, 0.403), rgba(81, 10, 14, 0.681));
+        height: 5dvh;
+        padding-top: 0%;
+
+    }
+
+    a {
+        color: rgb(248, 201, 181);
+        text-decoration: none;
+        font-weight: bold;
+        font-size: medium;
+        padding-top: 3%;
+
+    }
+
+    #tavany1 {
+        position: absolute;
+        height: 500px;
+        width: 100%;
+        justify-content: center;
+        align-items: center
+        
+    }
+
+    #hello1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    #history {
+        border-style: solid;
+        text-align: center;
+    }
+
+    #goal {
+        margin-top: 5dvh;
+        border-style: solid;
+        width: fit-content;
+        text-align: center;
+    }
+
+
+}
+
+
+
+@media (max-width: 361px) {
+    * {
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .navbar {
+        display: flex;
+        padding-left: 5%;
+        flex-direction: row;
+        background: linear-gradient(rgba(96, 37, 37, 0.481), rgba(238, 63, 63, 0.403), rgba(81, 10, 14, 0.681));
+        height: 5dvh;
+      
+        box-sizing: border-box;
+
+    }
+
+    a {
+        color: rgb(248, 201, 181);
+        text-decoration: none;
+        font-size: small;
+        box-sizing: border-box;
+    }
+
+    #tavany {
+        position: absolute;
+        height: 500px;
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        box-sizing: border-box;
+        flex-direction: column;
+        overflow: hidden;
+
+    }
+
+    #hello1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #history {
+        border-style: solid;
+        text-align: center;
+    }
+
+    #goal {
+        margin-top: 5dvh;
+        border-style: solid;
+        width: fit-content;
+        height: fit-content;
+        text-align: center;
+        font-size: small;
+        margin: 0 5%;
+        text-decoration: none;
+        justify-content: space-evenly;
+    }
+
+
+
+
+}
+
+
+/*key frame*/
+
+@keyframes tsipika {
+    0% {
+        right: 10%;
+    }
+
+    100% {
+        right: 0%;
+    }
+}
